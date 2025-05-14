@@ -2,38 +2,69 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Mon site</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Mon site</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 
 <body>
 
-    <!-- header -->
-    <header>
-        <h1>Mon Site</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- header -->
+  <header>
+    <h1>Mon Site</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <H1 class="centrer">Mes voyages</H1>
+  <H1 class="centrer">Mes voyages</H1>
 
-    <section class="galerie">
-        <div class="ligne ligne-haut">
-          <img src="assets/pexels-alex-blokstra-300443-1327335.jpg" alt="Image 1">
-          <img src="assets/pexels-fotios-photos-1107717.jpg" alt="Image 2">
-          <img src="assets/pexels-nextvoyage-1476880.jpg" alt="Image 3">
-        </div>
-        <div class="ligne ligne-bas">
-          <img src="assets/pexels-pixabay-147411.jpg" alt="Image 4">
-          <img src="assets/pexels-pixabay-268533.jpg" alt="Image 5">
-        </div>
-      </section>
+  <section class="galerie">
+    <div class="ligne ligne-haut">
+      <img src="assets/pexels-alex-blokstra-300443-1327335.jpg" alt="Image 1">
+      <img src="assets/pexels-fotios-photos-1107717.jpg" alt="Image 2">
+      <img src="assets/pexels-nextvoyage-1476880.jpg" alt="Image 3">
+    </div>
+    <div class="ligne ligne-bas">
+      <img src="assets/pexels-pixabay-147411.jpg" alt="Image 4">
+      <img src="assets/pexels-pixabay-268533.jpg" alt="Image 5">
+    </div>
+  </section>
+
+    <style>
+    .carre {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin: 20px;
+      background-color: blue;
+    }
+#carre2 {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<script src="dom.js" defer></script>
+<body>
+
+  <div id="carre1" class="carre"></div>
+  <div id="carre2" class="carre"></div>
+
+  <script>
+    const carre1 = document.getElementById("carre1");
+
+    carre1.addEventListener("click", function () {
+      carre1.style.backgroundColor = "red";
+    });
+
+    
+  </script>
 
 </body>
 
